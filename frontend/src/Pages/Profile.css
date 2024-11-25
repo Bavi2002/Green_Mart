@@ -1,0 +1,337 @@
+/* Profile.css */
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F9F4EB;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Set a height for the container */
+}
+
+.profile-left, .profile-right {
+  width: 48%;
+}
+
+.profile-left {
+  background-color: rgb(251, 251, 251);
+  border-radius: 8px;
+  padding: 10px; /* Reduce padding to decrease height */
+  max-height: 400px; /* Set a maximum height */
+  overflow: auto; /* Add scroll if content exceeds max-height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
+  overflow-x: hidden; 
+}
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
+  overflow-x: hidden; 
+}
+
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.profile-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.profile-info p strong {
+  color: #2D9C3C;
+}
+
+.profile-button {
+  background-color: #2D9C3C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-button:hover {
+  background-color: #1B6626;
+}
+
+.profile-button.cancel {
+  background-color: #f44336;
+}
+
+.profile-button.delete, .profile-button.logout {
+  background-color: #E74C3C;
+  margin-right: 10px;
+}
+
+.profile-button.delete:hover, .profile-button.logout:hover {
+  background-color: #c0392b;
+}
+
+.edit-form .profile-input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.address-book, .order-history {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.address-book h3, .order-history h3 {
+  color: #2D9C3C;
+  margin-bottom: 15px;
+}
+
+.address-item {
+  display: flex;
+  justify-content: space-between; /* Space out the content and the delete button */
+  align-items: center; /* Vertically center the items */
+  margin-bottom: 10px;
+}
+
+.add-address-btn {
+  background-color: #2D9C3C;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-address-btn:hover {
+  background-color: #1B6626;
+}
+
+.delete-address-btn {
+  background-color: #E74C3C;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-address-btn:hover {
+  background-color: #c0392b;
+}
+
+.order-search-bar {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.order-search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.order-search-btn {
+  background-color: #2D9C3C;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.recent-orders {
+  margin-top: 10px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item p {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.error-message {
+  color: #E74C3C;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.address-item {
+  display: flex;
+  justify-content: space-between; /* Space out the content and delete button */
+  align-items: center; /* Vertically align items */
+  margin-bottom: 10px;
+}
+
+.address-content {
+  display: flex;
+  align-items: center; /* Vertically center the radio button and address */
+}
+
+.delete-address-btn {
+  background-color: #E74C3C;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto; /* Push the button to the right */
+}
+
+.delete-address-btn:hover {
+  background-color: #c0392b;
+}
+/* Styling for the input field and add button */
+.add-address-section {
+  display: flex;
+  gap: 10px; /* Adds space between the input and button */
+  margin-top: 15px; /* Adds space above the input section */
+}
+
+.add-address-input {
+  flex-grow: 1; /* Allows the input field to take up remaining space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 60%;
+  max-width: 300px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.add-address-btn {
+  background-color: #2D9C3C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-address-btn:hover {
+  background-color: #1B6626;
+}
+
+.profile-info .profile-button {
+  margin-right: 10px; /* Adds space to the right of each button */
+}
+
+/* Adding gap between Save Changes and Cancel buttons */
+.edit-form .profile-button {
+  margin-right: 10px; /* Adds space to the right of each button */
+}
+.profile-image {
+  display: block;
+  margin: 10px auto; /* Centers the image horizontally */
+  width: 100px; /* Set a smaller width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes it circular; adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F9F4EB;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Set a height for the container */
+}
+
+.profile-left {
+  width: 48%;
+  background-color: rgb(251, 251, 251);
+  border-radius: 8px;
+  padding: 10px;
+  max-height: 470px; /* Set a maximum height */
+  overflow-y: auto; /* Add scroll if content exceeds max-height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Space between info and buttons */
+}
+
+.profile-buttons {
+  display: flex; /* Flex container for horizontal layout */
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 10px; /* Adds space between buttons */
+  margin-top: 15px; /* Adds space above the buttons */
+}
+
+.profile-button {
+  width: 150px; /* Adjust the width as needed */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-button.edit {
+  background-color: #007bff; /* Blue background for edit button */
+}
+
+.profile-button.edit:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.profile-button.delete {
+  background-color: #dc3545; /* Red background for delete button */
+}
+
+.profile-button.delete:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.profile-button.logout {
+  background-color: #28a745; /* Green background for logout button */
+}
+
+.profile-button.logout:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Other existing styles remain the same */
+
+
+
+
+.edit-form .profile-input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 80%; /* Set width to 80% */
+  max-width: 400px; /* Optional maximum width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}

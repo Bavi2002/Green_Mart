@@ -1,0 +1,122 @@
+.cartscreen {
+    display: flex;
+    max-width: 1300px;
+    margin: 2rem auto;
+
+    .cartscreen-left {
+        flex: 0.7;
+        margin-right: 1rem;
+        background-color: transparent;
+        padding: 1rem;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th, td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            th {
+                background-color: #f4f4f4;
+            }
+
+            td img {
+                width: 50px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+
+            td button {
+                margin-left: 10px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                color: #007bff;
+                font-size: 14px;
+                padding: 0;
+            }
+
+            td button:hover {
+                text-decoration: underline;
+            }
+
+            td span {
+                margin: 0 10px;
+            }
+
+            td button:first-of-type,
+            td button:last-of-type {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+
+            td button:first-of-type:hover,
+            td button:last-of-type:hover {
+                background-color: #e0e0e0;
+            }
+        }
+    }
+
+    .cartscreen-right {
+        flex: 0.3;
+        background: #FFF;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+        height: fit-content;
+
+        div {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+
+            button {
+                padding: 10px 17px;
+                width: 100%;
+                background: #171717;
+                color: #F4F4F4;
+                border: 1px solid #171717;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+
+        div:last-child {
+            border: none;
+        }
+
+        .cartscreen-info p {
+            padding: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .cartscreen {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cartscreen {
+        max-width: 800px;
+        flex-direction: column;
+
+        .cartscreen-left {
+            margin: 0;
+        }
+
+        .cartscreen-right {
+            margin: 1rem;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+/* General reset for the body */
+body {
+   
+}
+
+/* Center the login form */
+.login-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #4e47d1;
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+}
+
+/* Error message styling */
+#error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Register link */
+#if-not-register-details {
+    margin-top: 20px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+#register-btn {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+#register-btn:hover {
+    color: #4e47d1;
+    text-decoration: underline;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 20px 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

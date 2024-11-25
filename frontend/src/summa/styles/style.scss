@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F4F4F4;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@import "./navbar";
+@import "./sidedrawer";
+@import "./backdrop";
+@import "./homescreen";
+@import "./productscreen";
+@import "./cartscreen";
+@import "./product";
+@import "./cartitem";
+@import "./searchbar";

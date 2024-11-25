@@ -1,0 +1,107 @@
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+/* Search Input Styles */
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+input[type="text"]:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Select Styles */
+.full{
+  margin: 20px;
+}
+.full h1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* Table Styles */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Button Styles */
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Export Button Styles */
+
+.export-button {
+  background-color: red; /* Set background color to red */
+  color: white; /* Set text color to white */
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 50px; /* Add margin to separate from select */
+}
+
+.export-button:hover {
+  background-color: darkred; /* Change background on hover */
+}
+
+.export-button:active {
+  background-color: darkred; /* Keep the same on active */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

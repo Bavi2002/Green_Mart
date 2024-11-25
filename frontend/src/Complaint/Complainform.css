@@ -1,0 +1,151 @@
+/* Complainform.css */
+
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the overall container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+}
+
+/* Style for the section containing the header and description */
+section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Styles for the main heading */
+.h1r {
+    color: #333; /* Dark color for contrast */
+    font-size: 2rem; /* Size of the heading */
+}
+
+/* Styles for subheadings */
+.h2r {
+    color: #555; /* Slightly lighter color for subheadings */
+    font-size: 1.5rem; /* Size of the subheading */
+}
+
+/* Form container styling */
+#complaint-form {
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items at the start */
+  justify-content: space-between; /* Space out items */
+  background-color: #fff; /* White background for form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding around the form */
+  width: 1800px; /* Set the desired width */
+}
+
+/* Adjust the image styling */
+.customerservice {
+    flex: 1; /* Allow the image to grow */
+    max-width: 50%; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Form styling */
+form {
+    flex: 1; /* Allow the form to grow */
+    padding: 20px; /* Add padding to the form */
+}
+
+/* Label styling */
+.label-complain {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Border around inputs */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+}
+
+/* Error message styling */
+.error {
+    color: red; /* Red color for error messages */
+    font-size: 0.9rem; /* Smaller font for error messages */
+    margin-top: -10px; /* Space above error message */
+    margin-bottom: 10px; /* Space below error message */
+}
+
+/* Button container styling */
+.button-container {
+    display: flex; /* Flexbox for button layout */
+    justify-content: space-between; /* Space buttons evenly */
+}
+
+/* Submit button styling */
+.btn-submit {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+}
+
+/* Hover effect for submit button */
+.btn-submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Return button styling */
+.btn-return {
+    background-color: #6c757d; /* Gray background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+}
+
+/* Hover effect for return button */
+.btn-return:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* FAQ section styling */
+.faq-section {
+    margin-top: 20px; /* Space above FAQ section */
+}
+
+.questions {
+    background-color: #e9ecef; /* Light gray background for FAQ */
+    padding: 15px; /* Padding around FAQ section */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* FAQ question styling */
+.questions h3 {
+    margin-top: 15px; /* Space above questions */
+}
+
+/* Chat image styling */
+.chat {
+    width: 100%; /* Full width for chat image */
+    max-width: 500px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for chat image */
+    margin-top: 20px; /* Space above chat image */
+}

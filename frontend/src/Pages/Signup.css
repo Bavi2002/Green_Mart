@@ -1,0 +1,196 @@
+/* General Page Styling */
+
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    padding-top: 20px;
+    
+    transform: scale(0.7); /* Further scale down to 70% */
+    transform-origin: center top; /* Center the scaling from the top */
+    margin-top: 110px; /* Add margin to prevent the content from moving too far up */
+}
+
+
+
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1800px; /* Increased max-width */
+    width: 100%;
+    padding: 0; /* Add padding around the container */
+}
+
+.signup-text {
+    flex: 1;
+    padding: 40px;
+    background-color: #f2f2f2; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    margin-right: 20px; /* Space between text and form */
+}
+
+.signup-text h2 {
+    font-size: 50px; /* Larger font size */
+    color: #333;
+    text-align: center;
+}
+
+.signup-text p {
+    font-size: 1.2rem; /* Adjust font size for paragraph */
+    color: #555; /* Slightly darker text color */
+}
+
+.signup-form-container {
+    flex: 1;
+    padding: 40px; /* Adjust padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-input {
+    padding: 16px; /* Increase padding in input */
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Larger input font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-button {
+    padding: 16px; /* Increase button padding */
+    background-color: #0abd34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Larger button font size */
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #0d6ace;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.welcome-message {
+    flex: 1; /* Allow welcome message to take available space */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    background-color: #ebebeb; /* Light grey background */
+}
+
+.welcome-message h2 {
+    margin: -20px 0 10px; /* Move up by 20px and add space below */
+    /* Adjust the negative margin value to control how much it moves up */
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: flex-start; /* Align images to the left */
+    margin-top: 20px;
+}
+.welcome-image {
+    width: 400px; /* Set to your desired size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between images */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .signup-text h2 {
+        font-size: 40px; /* Adjusted font size for mobile */
+    }
+
+    .signup-form-container h1 {
+        font-size: 40px; /* Adjusted font size for mobile */
+    }
+
+    .signup-form-container p {
+        font-size: 25px; /* Adjusted font size for mobile */
+    }
+
+    .signup-text p {
+        font-size: 20px; /* Adjusted font size for mobile */
+    }
+
+    @media (max-width: 768px) {
+        .welcome-image {
+            width: 250px; /* Adjusted width for mobile */
+            margin-left: 30px;
+        }
+    }
+    
+}
+
+.signup-text h2 {
+    font-size: 60px; /* Increased font size for the heading */
+    color: #333;
+    text-align: center;
+    margin-top: 300px; /* Consider adjusting this for better spacing */
+}
+
+.signup-form-container h1 {
+    font-size: 70px; /* Increased font size for the welcome message */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.signup-form-container p {
+    font-size: 35px; /* Increased font size for the "Getting started is easy" message */
+    text-align: center;
+    margin-top: 2px;
+}
+
+.signup-text p {
+    font-size: 30px; /* Increased font size */
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 20px !important; /* Adjusted font size with !important */
+}

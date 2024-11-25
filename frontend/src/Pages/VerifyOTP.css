@@ -1,0 +1,95 @@
+/* Container for the entire OTP section */
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6eee4;  /* Background matches the light cream tone */
+  }
+  
+  /* Card styling to match the design */
+  .otp-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 500px;
+   
+  }
+  
+  /* Title style */
+  .otp-card h2 {
+    color: #09a236;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtext styling */
+  .otp-card p {
+    font-size: 25px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for OTP input boxes */
+  .otp-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  padding: 10px;
+  margin-left:50px;
+    
+  }
+  
+  /* Individual OTP input boxes */
+  .otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: rgb(245, 0, 0);
+    margin-bottom: 10px;
+  }
+  
+  /* Button styling for 'Verify' */
+  .verify-btn {
+    background-color: #09a236;
+    color: white;
+    padding: 15px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+   
+  }
+  
+  /* Resend text and button styles */
+  .resend-text {
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  .resend-btn {
+    background: none;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .otp-input-single {
+    width: 50%; /* Adjust width for 6 digits */
+    padding: 15px 150px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+    

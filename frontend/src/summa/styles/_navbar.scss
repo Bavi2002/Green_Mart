@@ -1,0 +1,94 @@
+.navbar {
+    width: 100%;
+    height: 98px;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+    .navbar-logo{
+        a {
+            text-decoration: none;
+            h2 {
+                color:#F4F4F4;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .navbar-links{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        > li {
+            padding-left: 1.5rem;
+            .cart-link{
+                background: #333;
+                padding: 10px;
+                border-radius: 8px;
+                &:hover{
+                    background-color: #dd219e;
+                    color: #F4F4F4;
+                }
+            }
+            > a {
+                text-decoration: none;
+                color: #F4F4F4;
+                font-size: 1.25rem;
+                display: flex;
+                align-items: center;
+                > span {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 8px;
+                    .cartlogo-badge {
+                        width: 30px;
+                        height: 30px;
+                        background: #F4F4F4;
+                        border-radius: 50%;
+                        margin-left: 8px;
+                        color: #171717;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .hamburger-menu {
+        width: 30px;
+        height: 30px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:hover > div{
+            background-color: #dd219e;
+        }
+        > div {
+            width: 100%;
+            height: 3px;
+            background-color: #F4F4F4;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar .navbar-links {
+        display: none;
+    }
+    .navbar .hamburger-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar .navbar-logo h2 {
+        font-size: 1rem;
+    }
+}

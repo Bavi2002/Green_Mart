@@ -1,0 +1,373 @@
+/* General Styles
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f4ee;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navi{
+    background-color: #5f7357;
+    overflow: hidden;
+}
+
+.navi li{
+    float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navi li.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.logo{
+    height: 200px; /* Adjust the height */
+    /* width: auto;  Maintain aspect ratio 
+    margin-right: 20px;
+}
+
+.package-component {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #faf9f7;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3e553b;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.packaging-options,
+.customization,
+.note-section {
+    margin-top: 15px;
+}
+
+.packaging-options label,
+.customization label,
+.note-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2f5d27;
+}
+
+.packaging-options select,
+.customization select,
+.customization input[type="color"],
+.note-section textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.customization input[type="color"] {
+    padding: 5px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.note-section textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.custom-color-wrapper,
+.add-pattern-wrapper {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between;
+    margin-top: 10px;
+}
+
+.custom-color-wrapper input,
+.add-pattern-wrapper select {
+    width: calc(100% - 60px);
+}
+
+.custom-color-wrapper button,
+.add-pattern-wrapper button {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3e553b;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-color-wrapper button:hover,
+.add-pattern-wrapper button:hover {
+    background-color: #5f7357;
+}
+
+.packaging-materials {
+    margin-top: 30px;
+}
+
+.packaging-materials h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #3e553b;
+}
+
+.packaging-materials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.packaging-material {
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.product.selection{
+
+}
+
+.packaging-material img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.packaging-material h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #3e553b;
+}
+
+.packaging-material p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #3e553b;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #f9f9f9;
+}
+
+.product-image {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    
+}  */
+
+/* General packaging section styling */
+.packaging {
+    padding: 50px;
+    background-color: #f5f0e7;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Individual product card styling */
+  .product {
+    display: flex;
+    align-items: center;
+    background-color: #f8f5ec;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Product image styling */
+  .product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  /* Product details */
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .product-details h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Selection container */
+  .selection {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 20px;
+  }
+  
+  /* Label and dropdown for packaging option */
+  .selection label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .selection select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 10px; /* Space between the dropdown and the buttons */
+    flex: 1; 
+  }
+  
+  /* Button group for custom color and pattern */
+  .button-group {
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  
+  button.custom-color, 
+  button.add-pattern {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #7b8c6f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button.add-pattern {
+    background-color: #5a7355;
+  }
+  /* Note input section */
+  .note-section label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .note-section input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+
+  /* Container for the cards */
+.packaging-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f5f0e7;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Image styling */
+  .product-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  
+  /* Card title styling */
+  .card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Card description styling */
+  .card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: scale(1.05);
+  }
+  

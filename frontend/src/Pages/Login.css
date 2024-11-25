@@ -1,0 +1,182 @@
+/* General Page Styling */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.login-page {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  transform: scale(1.9); /* Scale up by 130% (slightly reduced to prevent cutting off) */
+  transform-origin: center; /* Keep the scaling centered */
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1200px; /* Increased max-width to prevent cutting */
+  width: 100%;
+}
+
+.login-form-container {
+  flex: 1;
+  padding: 50px; /* Adjust padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2.5rem; /* Larger font size */
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem; /* Larger input font size */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-button {
+  padding: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Message and Images */
+.welcome-message {
+  flex: 1;
+  padding: 40px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.welcome-image {
+  width: 180px !important; /* Force the width change */
+   /* Maintain aspect ratio */
+  margin: 0 10px;
+ 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .welcome-message {
+    display: none; /* Hide the welcome section on smaller screens */
+  }
+}
+
+/* Login.css */
+
+.login-page {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  transform: scale(1.5); /* Scale to 1.5 */
+  transform-origin: top center; /* Adjust origin to scale from the top */
+  margin-top: -180px; /* Negative margin to move page up */
+}
+
+
+
+
+.login-container {
+  display: flex;
+  justify-content: space-between; /* Space between form and welcome message */
+  max-width: 850px; /* Max width for the container */
+  width: 100%; /* Full width */
+}
+
+.login-form-container {
+  flex: 1; /* Allow form to take available space */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+  flex: 1; /* Allow welcome message to take available space */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: flex-start; /* Align items to the left */
+  text-align: left; /* Align text to the left */
+  background-color: #f3f3f3; /* Light grey background */
+}
+
+.welcome-message h2 {
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start; /* Align images to the left */
+  margin-top: 20px;
+}
+
+.welcome-image {
+  width: 150px; /* Set width for the images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between images */
+}
